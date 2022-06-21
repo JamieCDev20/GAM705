@@ -1,0 +1,5 @@
+﻿LearningA.obj : error LNK2019: unresolved external symbol "public: __thiscall Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QAE@XZ) referenced in function _main
+LearningA.obj : error LNK2019: unresolved external symbol "public: __thiscall Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QAE@XZ) referenced in function _main
+LearningA.obj : error LNK2019: unresolved external symbol "public: struct aiScene const * __thiscall Assimp::Importer::ReadFile(char const *,unsigned int)" (?ReadFile@Importer@Assimp@@QAEPBUaiScene@@PBDI@Z) referenced in function _main
+C:\Users\jamie\Desktop\CPP\LearningA\packages\AssimpCpp.5.0.1.6\build\native\lib\Debug\assimp-vc142-mtd.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\jamie\Desktop\CPP\LearningA\Debug\LearningA.exe : fatal error LNK1120: 3 unresolved externals

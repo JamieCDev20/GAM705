@@ -1,0 +1,2 @@
+C:\Users\jamie\Desktop\CPP\LearningA\x64\Debug\assimp-vc142-mtd.dll
+C:\Users\jamie\Desktop\CPP\LearningA\x64\Debug\LearningA.exe
