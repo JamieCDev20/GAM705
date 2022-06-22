@@ -7,6 +7,9 @@
 #include <assimp/postprocess.h>
 
 #include <iostream>
+#include <fstream>
+#include <string>
+
 
 int main()
 {
@@ -16,44 +19,56 @@ int main()
 	if (!scene) {
 		std::cerr << "didn't load" << std::endl;
 	}
-	
+
+	std::string nam = scene->mAnimations[0]->mName.C_Str();
+	nam += ".txt";
+
+	std::ofstream file;
+	file.open(nam, std::ios::out);
+
 	unsigned int n = scene->mAnimations[0]->mNumChannels;
 
 	for (unsigned int i = 0; i < n; ++i)
 	{
 		aiAnimation* anim = scene->mAnimations[0];
 		aiNodeAnim** nodeChannels = anim->mChannels;
-		
+
 		unsigned int numRotKeys = nodeChannels[i]->mNumRotationKeys;
 		unsigned int numPosKeys = nodeChannels[i]->mNumPositionKeys;
+		file << "SS";
 
-		std::cout << "Rotation data" << std::endl;
+		std::string curLine = "";
+
 		for (unsigned int j = 0; j < numRotKeys; j++)
 		{
 			aiQuaternion quat = nodeChannels[i]->mRotationKeys[j].mValue;
-			std::cout << "(" << quat.x << "," << quat.y << "," << quat.z << "," << quat.w << ")" << " ";
+			curLine += ":" + std::to_string(quat.x) + "," + std::to_string(quat.y) + "," + std::to_string(quat.z) + "," + std::to_string(quat.w);
 			if (j % 5 == 0 && j > 0)
 			{
-				std::cout << std::endl;
+				file << curLine;
+
+				curLine = "";
 			}
 		}
 
-		std::cout << std::endl << "Position data" << std::endl;
+		file << "#";
+		curLine = "";
 
 		for (unsigned int j = 0; j < numPosKeys; j++)
 		{
 			aiVector3D vec = nodeChannels[i]->mPositionKeys[j].mValue;
-			std::cout << "(" << vec.x << "," << vec.y << "," << vec.z << ")" << " ";
+			file << ":" << std::to_string(vec.x) << "," << std::to_string(vec.y) << "," << std::to_string(vec.z);
 			if (j % 5 == 0 && j > 0)
 			{
-				std::cout << std::endl;
+				file << curLine;
+
+				curLine = "";
 			}
 		}
-		
-		std::cout << std::endl;
-		std::cout << nodeChannels[i]->mPostState << std::endl;
-		std::cout << "\n\n" << std::endl;
+
 
 	}
+
+	std::cerr << "Done writing to file" << std::endl;
 
 }
