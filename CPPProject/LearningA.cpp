@@ -18,6 +18,7 @@ int main()
 
 	if (!scene) {
 		std::cerr << "didn't load" << std::endl;
+		return 0;
 	}
 
 	std::string nam = scene->mAnimations[0]->mName.C_Str();
