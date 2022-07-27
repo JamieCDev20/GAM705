@@ -9,19 +9,54 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 
+
+void ReadWriteAnimFiles(std::string fName);
 
 int main()
 {
+
+	std::string names[15] = {
+		"AlxWalk1.fbx",
+		"AlxWalk2.fbx",
+		"AlxWalk3.fbx",
+		"ExeWalk1.fbx",
+		"ExeWalk2.fbx",
+		"ExeWalk3.fbx",
+		"FilWalk1.fbx",
+		"FilWalk2.fbx",
+		"FilWalk3.fbx",
+		"GibWalk1.fbx",
+		"GibWalk2.fbx",
+		"GibWalk3.fbx",
+		"JamWalk1.fbx",
+		"JamWalk2.fbx",
+		"JamWalk3.fbx",
+	};
+
+	for (int i = 0; i < 15; i++)
+	{
+		ReadWriteAnimFiles(names[i]);
+	}
+
+	std::cerr << "Finished Writing All Files" << std::endl;
+
+}
+
+void ReadWriteAnimFiles(std::string fName)
+{
 	Assimp::Importer importer;
-	const aiScene* scene = importer.ReadFile("AlxWalk1.fbx", 0);
+	const aiScene* scene = importer.ReadFile(fName, 0);
 
 	if (!scene) {
 		std::cerr << "didn't load" << std::endl;
-		return 0;
+		return;
 	}
 
-	std::string nam = scene->mAnimations[0]->mName.C_Str();
+
+	std::string nam = "C:/Users/jamie/Desktop/TextFileOutput/";
+	nam += scene->mAnimations[0]->mName.C_Str();
 	nam += ".txt";
 
 	std::ofstream file;
@@ -71,5 +106,4 @@ int main()
 	}
 
 	std::cerr << "Done writing to file" << std::endl;
-
 }
