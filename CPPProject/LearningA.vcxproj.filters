@@ -20,11 +20,51 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Media Include="..\..\..\Downloads\Walk.fbx">
-      <Filter>Resource Files</Filter>
-    </Media>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
+    <None Include="..\Walks\AlxWalk1.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\AlxWalk2.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\AlxWalk3.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\ExeWalk1.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\ExeWalk2.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\ExeWalk3.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\FilWalk1.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\FilWalk2.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\FilWalk3.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\GibWalk1.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\GibWalk2.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\GibWalk3.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\JamWalk1.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\JamWalk2.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Walks\JamWalk3.fbx">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

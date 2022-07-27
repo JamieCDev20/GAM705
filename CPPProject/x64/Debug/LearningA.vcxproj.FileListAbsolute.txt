@@ -2,3 +2,5 @@ C:\Users\jamie\Desktop\CPP\LearningA\x64\Debug\assimp-vc142-mtd.dll
 C:\Users\jamie\Desktop\CPP\LearningA\x64\Debug\LearningA.exe
 D:\Ludophoria\GAM705\CPPProject\x64\Debug\assimp-vc142-mtd.dll
 D:\Ludophoria\GAM705\CPPProject\x64\Debug\LearningA.exe
+C:\Users\jamie\Documents\GitHub\GAM705\CPPProject\x64\Debug\assimp-vc142-mtd.dll
+C:\Users\jamie\Documents\GitHub\GAM705\CPPProject\x64\Debug\LearningA.exe

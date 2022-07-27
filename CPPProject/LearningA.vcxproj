@@ -143,11 +143,21 @@
     <ClCompile Include="LearningA.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="..\..\..\Downloads\Walk.fbx">
-      <FileType>Document</FileType>
-    </Media>
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="..\Walks\AlxWalk1.fbx" />
+    <None Include="..\Walks\AlxWalk2.fbx" />
+    <None Include="..\Walks\AlxWalk3.fbx" />
+    <None Include="..\Walks\ExeWalk1.fbx" />
+    <None Include="..\Walks\ExeWalk2.fbx" />
+    <None Include="..\Walks\ExeWalk3.fbx" />
+    <None Include="..\Walks\FilWalk1.fbx" />
+    <None Include="..\Walks\FilWalk2.fbx" />
+    <None Include="..\Walks\FilWalk3.fbx" />
+    <None Include="..\Walks\GibWalk1.fbx" />
+    <None Include="..\Walks\GibWalk2.fbx" />
+    <None Include="..\Walks\GibWalk3.fbx" />
+    <None Include="..\Walks\JamWalk1.fbx" />
+    <None Include="..\Walks\JamWalk2.fbx" />
+    <None Include="..\Walks\JamWalk3.fbx" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

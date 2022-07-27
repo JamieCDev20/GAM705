@@ -14,7 +14,7 @@
 int main()
 {
 	Assimp::Importer importer;
-	const aiScene* scene = importer.ReadFile("SHO_EX_1.fbx", 0);
+	const aiScene* scene = importer.ReadFile("AlxWalk1.fbx", 0);
 
 	if (!scene) {
 		std::cerr << "didn't load" << std::endl;
