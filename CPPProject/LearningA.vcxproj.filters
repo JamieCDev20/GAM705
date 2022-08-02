@@ -21,52 +21,50 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <CopyFileToFolders Include="..\Walks\AlxWalk1.fbx">
+    <None Include="..\InPlaceWalks\AlxWalk1.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\AlxWalk2.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\AlxWalk2.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\AlxWalk3.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\AlxWalk3.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\ExeWalk1.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\ExeWalk1.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\ExeWalk2.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\ExeWalk2.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\ExeWalk3.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\ExeWalk3.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\FilWalk1.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\FilWalk1.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\FilWalk2.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\FilWalk2.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\FilWalk3.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\FilWalk3.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\GibWalk1.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\GibWalk1.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\GibWalk2.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\GibWalk2.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\GibWalk3.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\GibWalk3.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\JamWalk1.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\JamWalk1.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\JamWalk2.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\JamWalk2.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\Walks\JamWalk3.fbx">
+    </None>
+    <None Include="..\InPlaceWalks\JamWalk3.fbx">
       <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
+    </None>
   </ItemGroup>
 </Project>
